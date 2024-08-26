@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trang5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <header>
+
+            <div class="logo">
+                <img src="https://thucung01.adsmoweb.com/assets/img/logo.png" alt="logo"><br>
+                <article class="seach">
+                    <input type="text" placeholder="Bạn tìm gì...">
+                    <form action="seach">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </article>
+            </div>
+            <ul>
+                <a href="/trang1.html"><li>Trang chủ</li></a>
+                <a href="/trang2.html"><li>Danh mục</li></a>
+                <a href="/trang3.html"><li>Tin tức</li></a>
+                <a href="/trang4.html"><li>Chi tiết</li></a>
+                <a href="/trang5.html"><li>Login-Register</li></a>
+            </ul>
+           
+        </header>
+        <section class="banner"></section>
+        <section class="main">
+            <form>
+                <h1>Login</h1>
+                <h4>Username or email</h4>
+                <input type="text" id="emai" placeholder="Username or email">
+                <p>Please enter your email</p>
+                <h4>PassWord</h4>
+                <input type="text" id="emai" placeholder="PassWord">
+                <p>Please enter a password</p>
+                <button type="submit">Log In</button>
+            </form>
+            <form>
+                <h1>Register</h1>
+                <h4>Username</h4>
+                <input type="text" placeholder="Username" id="name">
+                <p id="tbname"></p>
+                <h4>Phone Number</h4>
+                <input type="text" placeholder="Phone number" id="phone">
+                <p id="tbphone"></p>
+                <h4>Email</h4>
+                <input type="text" id="email" placeholder="Email">
+                <p id="tbemail"></p>
+                <h4>PassWord</h4>
+                <input type="text" id="pass" placeholder="PassWord">
+                <p id="tbpass"></p>
+                <span>The password should be at least eight characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ & </span> <br>
+                <button type="submit" onclick="checkFrom()">Register</button>
+            </form>
+        </section>
+        <footer>
+            <div class="footer1">
+                <div class="logo-2">
+                    <img src="/img/white-logo.png" alt="">
+                </div>
+                <div class="footer-menu">
+                    <p>Hotline: 0356.105.488</p>
+                    <p>Email: info@adsmo.vn</p>
+                    <p>Tech support: +0356.105.488</p>
+                    <p>Adddress: 22 Phố Mới Thủy Sơn Thủy Nguyên Hải Phòng</p>
+                </div>
+                
+            </div>
+            <div class="ker"></div>
+            <div class="text">      
+                <span>Copyright @2021 Petoi. Thiết kế website bởi ADSMO</span>
+            </div> 
+        </footer>
+
+    </section>
+    <script>
+        function stop() {
+            Event.
+        }
+        
+        var  name=document.getElementById('name');
+        var phone= document.getElementById('phone');
+        var email=document.getElementById('email');
+        var pass =document.getElementById('pass');
+        function checkFrom() {
+            if(name.value.length==0){
+                document.getElementById('tbname').innerHTML="tên của bạn khôgn đc để trống";
+            }else if(name.value.length<=8){
+                document.getElementById('tbname').innerHTML="tên của bạn phải trên 8ki tự ";
+            }else{
+                document.getElementById('tbname').innerHTML="";
+            }
+            var checkEmail=/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+            if(emali.value==""|| emali.value==null) {
+                document.getElementById('txt').innerHTML= "vui lòng nhập email"
+            }else if(!checkEmail.test(emali.value)) {
+                document.getElementById('txt').innerHTML="email không hợp lệ"
+            }else{
+                document.getElementById('txt').innerHTML="email hợp lệ"
+            }
+            
+        }
+    </script>
+</body>
+</html>
